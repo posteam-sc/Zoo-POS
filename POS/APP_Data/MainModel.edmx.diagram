@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="082b49edac6c4af18520fcd307e8141b" Name="Diagram1">
+        <EntityTypeShape EntityType="MainModel.Authorize" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.Brand" Width="1.5" PointX="6" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.City" Width="1.5" PointX="3.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.Counter" Width="1.5" PointX="6" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.DailyRecord" Width="1.5" PointX="8.25" PointY="26.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.DeleteLog" Width="1.5" PointX="5.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.PaymentType" Width="1.5" PointX="6" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.pjForm" Width="1.5" PointX="8.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.pjForms_Localization" Width="1.5" PointX="11" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.Product" Width="1.5" PointX="8.25" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.ProductCategory" Width="1.5" PointX="6" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.ProductPriceChange" Width="1.5" PointX="8.25" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.ProductSubCategory" Width="1.5" PointX="6" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.RoleManagement" Width="1.5" PointX="3" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.Setting" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.Shop" Width="1.5" PointX="6" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.tblPeriod" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.Ticket" Width="1.5" PointX="12.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.TicketButtonAssign" Width="1.5" PointX="10.5" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.Transaction" Width="1.5" PointX="8.25" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.TransactionDetail" Width="1.5" PointX="10.5" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.Turnstile" Width="1.5" PointX="13" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.TurnStileServer" Width="1.5" PointX="10.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.User" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.UserRole" Width="1.5" PointX="0.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainModel.tblTime" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="MainModel.FK_Product_Brand" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_Shop_City" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_DailyRecord_Counter" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_DeleteLog_Counter" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_Transaction_Counter" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_DeleteLog_Transaction" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_DeleteLog_TransactionDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_DeleteLog_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_Transaction_PaymentType" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_Forms_Localization_Forms_Localization" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_Product_ProductCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_Product_ProductType" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_ProductPriceChange_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_TicketButtonAssign_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_TransactionDetail_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_ProductSubCategory_ProductCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_ProductPriceChange_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_RoleManagement_UserRole" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_transaction_Shop" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_Ticket_TransactionDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_Transaction_Transaction" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_Transaction_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_TransactionDetail_Transaction" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_Turnstile_TurnStileServer" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_User_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_User_User1" ManuallyRouted="false" />
+        <AssociationConnector Association="MainModel.FK_User_UserRole" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
